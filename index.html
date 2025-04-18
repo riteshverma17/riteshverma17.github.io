@@ -25,6 +25,12 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- Add this to your <head> -->
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<!-- Devicon CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 
 
 	<style>
@@ -113,10 +119,20 @@
 			transform: scale(1.1);
 		}
 
+		.video-bg {
+			position: relative;
+			overflow: hidden;
+		}
 
-
-
-
+		.bg-video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+		}
 	</style>
 
 
@@ -139,6 +155,7 @@
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
 					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certifications</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 				</ul>
 			</div>
@@ -151,10 +168,15 @@
 				<div class="container">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image: url(images/Earth.avif);">
+						
+						<div class="one-third js-fullheight order-md-last video-bg">
+							<video autoplay muted loop playsinline class="bg-video">
+								<source src="./images/earth.mp4" type="video/mp4" />
+
+							</video>
 							<div class="overlay"></div>
 						</div>
+
 						<div class="one-forth d-flex  align-items-center ftco-animate"
 							data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
@@ -214,118 +236,153 @@
 			</div>
 		</div>
 	</section>
-
-
-
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-					<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-										<div class="about-img">
-											<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-										</div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-										<div class="about-info">
-											<p><span class="title-s">Name: </span> <span>Ritesh Verma</span></p>
-											<p><span class="title-s">Job Role: </span> <span>Web Developer</span>
-											</p>
-
-											<p><span class="title-s">Address: </span> <span>Punjab, India</span></p>
-										</div>
-									</div>
-								</div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>HTML, CSS</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-
-									<span>JavaScript</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%"
-											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-
-									<span>React, Angular</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%"
-											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-
-									<span>Node.js/Express.js</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%"
-											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-
-									<span>C++, Java, DSA</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%"
-											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
+			<div class="row align-items-center">
+				<!-- Image Column -->
+				<div class="col-md-4">
+					<div class="about-img">
+						<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="About Me Image">
 					</div>
-
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-
-								<p>Hello! I'm currently pursuing BTech in Computer Science and Engineering at Lovely
-									Professional University. I'm a passionate Web Developer with a strong focus on
-									creating dynamic, user-friendly websites and applications. I specialize in building
-									responsive, high-performance web solutions that deliver an exceptional user
-									experience across all devices. I’m skilled in using modern technologies like HTML,
-									CSS, JavaScript, and frameworks such as React, Node.js, and Express.
-
-								</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Full Stack Web Developer</span>
-									</li>
-
-									<li class="d-flex"><span>Education:</span> <span>B.Tech Computer Science
-											Engineering</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>FrameWorks:</span> <span>Angular, Node.js/Express.js &amp;
-											MongoDB</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Java, C++, Excel,
-											&amp; Git</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Learning,
-											Playing</span></li>
-
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-
-								<p><a href="https://www.linkedin.com/in/ritesh-verma-b25408252/"
-										class="btn btn-primary py-3 px-3" target="_blank">LinkedIn</a></p>
-							</div>
-						</div>
+				</div>
+	
+				<!-- About Me Column -->
+				<div class="col-md-6 pl-md-5">
+					<div class="heading-section ftco-animate">
+						<h1 class="big">About</h1>
+						<h2 class="mb-4">About Me</h2>
+						<p>
+							Hello! I'm pursuing BTech in Computer Science and Engineering at Lovely Professional University. 
+							I'm a passionate Full Stack Developer with a strong focus on creating dynamic, user-friendly websites 
+							and applications. I specialize in building responsive, high-performance web solutions that 
+							deliver an exceptional user experience across all devices.
+						</p>
+						<p>
+							<a href="https://www.linkedin.com/in/ritesh-verma-b25408252/" 
+							   class="btn btn-primary py-3 px-3" 
+							   target="_blank">
+								LinkedIn
+							</a>
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<br><br><br>
+	
 
+
+
+
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+
+
+
+			<div class="row">
+				
+
+				<h1 class="big-4">Skills</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+
+			<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
+
+				<!-- C++ -->
+				<div style="text-align: center;">
+					<i class="devicon-cplusplus-plain colored" style="font-size: 100px;"></i>
+					<div>C++</div>
+				</div>
+
+				<!-- SQL -->
+				<div style="text-align: center;">
+					<i class="fas fa-database" style="font-size: 100px; color: #4B5563;"></i>
+					<div>SQL</div>
+				</div>
+
+				<!-- JavaScript -->
+				<div style="text-align: center;">
+					<i class="devicon-javascript-plain colored" style="font-size: 100px;"></i>
+					<div>JavaScript</div>
+				</div>
+
+				<!-- Java -->
+				<div style="text-align: center;">
+					<i class="devicon-java-plain colored" style="font-size: 100px;"></i>
+					<div>Java</div>
+				</div>
+
+				<!-- HTML -->
+				<div style="text-align: center;">
+					<i class="devicon-html5-plain colored" style="font-size: 100px;"></i>
+					<div>HTML</div>
+				</div>
+
+				<!-- CSS -->
+				<div style="text-align: center;">
+					<i class="devicon-css3-plain colored" style="font-size: 100px;"></i>
+					<div>CSS</div>
+				</div>
+
+				<!-- Bootstrap -->
+				<div style="text-align: center;">
+					<i class="devicon-bootstrap-plain colored" style="font-size: 100px;"></i>
+					<div>Bootstrap</div>
+				</div>
+
+				<!-- MongoDB -->
+				<div style="text-align: center;">
+					<i class="devicon-mongodb-plain colored" style="font-size: 100px;"></i>
+					<div>MongoDB</div>
+				</div>
+
+				<!-- Express.js -->
+				<div style="text-align: center;">
+					<i class="devicon-express-original" style="font-size: 100px;"></i>
+					<div>Express.js</div>
+				</div>
+
+				<!-- React.js -->
+				<div style="text-align: center;">
+					<i class="devicon-react-original colored" style="font-size: 100px;"></i>
+					<div>React.js</div>
+				</div>
+
+				<!-- Node.js -->
+				<div style="text-align: center;">
+					<i class="devicon-nodejs-plain colored" style="font-size: 100px;"></i>
+					<div>Node.js</div>
+				</div>
+
+				<!-- MySQL -->
+				<div style="text-align: center;">
+					<i class="devicon-mysql-plain colored" style="font-size: 100px;"></i>
+					<div>MySQL</div>
+				</div>
+
+				<!-- Git -->
+				<div style="text-align: center;">
+					<i class="devicon-git-plain colored" style="font-size: 100px;"></i>
+					<div>Git</div>
+				</div>
+
+				<!-- VS Code -->
+				<div style="text-align: center;">
+					<i class="devicon-vscode-plain colored" style="font-size: 100px;"></i>
+					<div>VS Code</div>
+				</div>
+
+			</div>
+
+
+
+	</section>
 
 
 
@@ -371,7 +428,8 @@
 
 			<div class="row justify-content-center mt-5">
 				<div class="col-md-6 text-center ftco-animate">
-					<p><a href="https://drive.google.com/file/d/1KFw32_m6Rlyd2vdpfYvkbdLUI3l0dJqv/view?usp=sharing" target="_blank" class="btn btn-primary py-4 px-5">Download CV</a></p>
+					<p><a href="https://drive.google.com/file/d/14Bq5qIKOCg8nUiqzkIW6Wb-EDYfPnYUr/view?usp=drive_link"
+							target="_blank" class="btn btn-primary py-4 px-5">Download CV</a></p>
 				</div>
 			</div>
 		</div>
@@ -385,7 +443,7 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Projects</h1>
 					<h2 class="mb-4">Projects</h2>
-					
+
 				</div>
 			</div>
 			<div class="row d-flex">
@@ -396,37 +454,41 @@
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a
-									href="https://github.com/riteshverma17/live-chat-app" target="_blank">Live Chat Box
-									</a></h3>
-							<p>Implemented a real-time live chat feature for customer interaction, enhancing user engagement and satisfaction.</p>
+							<h3 class="heading"><a href="https://github.com/riteshverma17/live-chat-app"
+									target="_blank">Live Chat Box
+								</a></h3>
+							<p>Implemented a real-time live chat feature for customer interaction, enhancing user
+								engagement and satisfaction.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/riteshverma17/Muscle-Up-Gym"  target="_blank"
+						<a href="https://github.com/riteshverma17/Muscle-Up-Gym" target="_blank"
 							class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a
-									href="https://github.com/riteshverma17/Muscle-Up-Gym" target="_blank">Responsive Gym Website
-									</a></h3>
-							<p>Developed a comprehensive gym website that includes features for membership management, class scheduling, and personalized workout tracking to enhance user engagement.</p>
+							<h3 class="heading"><a href="https://github.com/riteshverma17/Muscle-Up-Gym"
+									target="_blank">Responsive Gym Website
+								</a></h3>
+							<p>Developed a comprehensive gym website that includes features for membership management,
+								class scheduling, and personalized workout tracking to enhance user engagement.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry">
-						<a href="https://github.com/riteshverma17/news-app" target="_blank"
-							class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+						<a href="https://github.com/riteshverma17/news-app" target="_blank" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_3.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a
-									href="https://github.com/riteshverma17/news-app" target="_blank">Automated News Updater</a></h3>
-							<p>Designed and implemented an automated news updater that continuously gathers, processes, and delivers real-time news updates, ensuring timely and accurate information dissemination.</p>
+							<h3 class="heading"><a href="https://github.com/riteshverma17/news-app"
+									target="_blank">Automated News Updater</a></h3>
+							<p>Designed and implemented an automated news updater that continuously gathers, processes,
+								and delivers real-time news updates, ensuring timely and accurate information
+								dissemination.</p>
 						</div>
 					</div>
 				</div>
@@ -434,13 +496,99 @@
 			<br>
 			<!-- added justify-content-center to center align the last two projects -->
 			<div class="row d-flex justify-content-center">
-				
 
-				 <!-- write another project here -->
-				
+
+				<!-- write another project here -->
+
 			</div>
 		</div>
 	</section>
+
+
+	<section class="ftco-section" id="certifications-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Certifications</h1>
+			  <h2 class="mb-4">Certifications</h2>
+			</div>
+		  </div>
+	  
+		  <!-- Project 1 (Image Left, Text Right) -->
+		  <div class="row align-items-center mb-5">
+			<div class="col-md-5">
+			  
+				<img src="./certifications/Introduction to Large Language Models.png" alt="" class="img-fluid rounded zoom-effect">
+			  
+			</div>
+			<div class="col-md-6 ftco-animate">
+			  <h3 class="heading"><a href="#" target="_blank">Introduction to Large Language Models by - Coursera</a></h3>
+			</div>
+		  </div>
+	  
+		  <!-- Project 2 (Text Left, Image Right) -->
+		  <div class="row align-items-center mb-5 flex-md-row-reverse">
+			<div class="col-md-5">
+			  
+				<img src="./certifications/ChatGPT Advanced Data Analysis.png" alt="certificate" class="img-fluid rounded zoom-effect">
+			 
+			</div>
+			<div class="col-md-6 ftco-animate">
+			  <h3 class="heading"><a href="#" target="_blank">ChatGPT Advanced Data Analysis by - Coursera</a></h3>
+			 
+			</div>
+		  </div>
+	  
+		  <!-- Project 3 (Image Left, Text Right) -->
+		  <div class="row align-items-center mb-5">
+			<div class="col-md-5">
+			 
+				<img src="./certifications/Python, Data Science & Machine Learing Intergrated.png" alt="certificate" class="img-fluid rounded zoom-effect">
+			  </a>
+			</div>
+			<div class="col-md-6 ftco-animate">
+			  <h3 class="heading"><a href="#" target="_blank">Python, Data Science & Machine Learing Intergrated by - CipherSchools</a></h3>
+			  
+			</div>
+		  </div>
+		  <!-- Project 4 (Text Left, Image Right) -->
+		  <div class="row align-items-center mb-5 flex-md-row-reverse">
+			<div class="col-md-5">
+			  
+				<img src="./certifications/Cloud Computing.png" alt="certificate" class="img-fluid rounded zoom-effect">
+			 
+			</div>
+			<div class="col-md-6 ftco-animate">
+			  <h3 class="heading"><a href="#" target="_blank">Cloud Computing by -  NPTEL</a></h3>
+			 
+			</div>
+		  </div>
+	  
+		  <!-- Project 5 (Image Left, Text Right) -->
+		  <div class="row align-items-center mb-5">
+			<div class="col-md-5">
+			 
+				<img src="./certifications/DSA.png" alt="Automated News Updater" class="img-fluid rounded zoom-effect">
+			  </a>
+			</div>
+			<div class="col-md-6 ftco-animate">
+			  <h3 class="heading"><a href="#" target="_blank">Data Structures & Algorithms by - CipherSchools</a></h3>
+			  
+			</div>
+		  </div>
+
+
+
+		  
+	  
+		  
+		</div>
+	  </section>
+	  
+
+
+
+
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
 
@@ -499,7 +647,7 @@
 							<span class="icon-paper-plane"></span>
 						</div>
 						<h3 class="mb-4">Email Address</h3>
-						<p><a href="mailto:info@yoursite.com">riteshjii.04@gmail.com</a></p>
+						<p><a href="mailto:riteshjii.04@gmail.com">riteshjii.04@gmail.com</a></p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -508,7 +656,8 @@
 							<span class="icon-globe"></span>
 						</div>
 						<h3 class="mb-4">Download Resume</h3>
-						<p><a href="https://drive.google.com/file/d/1KFw32_m6Rlyd2vdpfYvkbdLUI3l0dJqv/view?usp=sharing" target="_blank">resumelink</a></p>
+						<p><a href="https://drive.google.com/file/d/14Bq5qIKOCg8nUiqzkIW6Wb-EDYfPnYUr/view?usp=drive_link"
+								target="_blank">resumelink</a></p>
 					</div>
 				</div>
 
@@ -517,7 +666,9 @@
 					<br>
 					<div class="row justify-content-center">
 						<div class="col-md-7 ftco-animate text-center">
-							<h2>Have a<span> Question? </span> <a href="https://www.linkedin.com/in/ritesh-verma-b25408252/" class="btn btn-primary py-3 px-5" target="_blank">Click
+							<h2>Have a<span> Question? </span> <a
+									href="https://www.linkedin.com/in/ritesh-verma-b25408252/"
+									class="btn btn-primary py-3 px-5" target="_blank">Click
 									Here</a> </h2>
 						</div>
 					</div>
